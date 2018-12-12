@@ -11,7 +11,7 @@ To be used as a standalone script. Requires two args:
 1) Number of images to look for. One per day starting from today and going back. So it's the number of days to go back in time. Actually Bing API limits it to 8.
 2) Destination folder where to save images and log file
 
-eg. /> python bing_downloader.py 1 ./
+eg. /> python bing_downloader.py 1 .
 
 
 
