@@ -50,7 +50,7 @@ def main():
     body = r.json()
     print("Found ", len(body['images']), " images")
     skipped = 0
-    with open("bing_daily_photo_log.txt", "a") as logfile:
+    with open(os.path.join(out_dir,"bing_daily_photo_log.txt"), "a") as logfile:
         for img in body['images']:
             url = img['url']
             size = re.split('_|\.|x',url)[-3:-1]
